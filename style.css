@@ -180,18 +180,21 @@ hr
 {
     width: 70%;
     min-height: 50vh;
-    /* border: 1px solid #fff; */
+    border: 1px solid #fff;
     display: flex;
     flex-wrap: wrap;
     padding: 50px;
+    padding-left: 170px; /* Edited */
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .item-element1
 {
     flex-basis: 23%;
-    height:250px;
+    align-self: flex-start; /* edited */
+    justify-self: flex-start; /* edited */
+    min-height:250px; /* edited */
     background-color: #230633;
     margin: 15px;
     padding: 20px;
@@ -216,3 +219,15 @@ hr
     margin-bottom: 10px;
 }
 
+.i4
+{
+    background: #38144c;
+    min-height: 50vh;
+}
+
+
+.sm-txt /* edited */
+{
+    font-weight: 100;
+    line-height: 30px;
+}
