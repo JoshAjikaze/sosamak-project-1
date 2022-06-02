@@ -180,7 +180,7 @@ hr
 {
     width: 70%;
     min-height: 50vh;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     display: flex;
     flex-wrap: wrap;
     padding: 50px;
@@ -223,7 +223,106 @@ hr
 {
     background: #38144c;
     min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding-top: 50px;
 }
+
+.i4 .about-top
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.about-top h3
+{
+    color: #fff;
+    font-size: clamp(1.3rem, 3vw, 2.5rem);
+
+}
+
+.i4 .about-down
+{
+    display: flex;
+    width: 70%;
+    /* border: 1px solid #fff; */
+    min-height: 5vh;
+    padding: 50px;
+    margin: 20px 0;
+    /* padding-left: 170px; */ /* Edited */
+}
+
+.i4 .small-text
+{
+    text-align: center;
+    margin: 30px;
+}
+
+.img-div
+{
+    margin: 0px 30px;
+    min-width: 200px;
+    min-height: 200px;
+    /* border: 1px solid #fff; */
+}
+
+.hi-there
+{
+    min-width: 200px;
+    min-height: 200px;
+    /* border: 1px solid #fff; */
+    padding: 20px;
+}
+
+.hi-there > p
+{
+    font-size: clamp(1.3rem, 3vw, 2.5rem);
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hi-there > span
+{
+    color: #fff;
+    line-height: 10px;  
+    width: 100%;                         
+}
+
+.hi-there > div
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 500px;
+    min-height: 200px;
+}
+
+.hi-there > div > span
+{
+    width: 200px;
+    /* height: 100px; */
+    color:#fff;
+    /* border: 1px solid #fff; */
+    margin: 10px 10px 10px 0; /* top right bottom left */
+}
+
+.span-top
+{
+    color: red;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* .span-bottom
+{
+
+} */
 
 
 .sm-txt /* edited */
