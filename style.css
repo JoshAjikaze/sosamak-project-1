@@ -2,6 +2,7 @@
 {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
     scroll-behavior: smooth;
 }
@@ -11,13 +12,16 @@
     background-color: #38144c;
     min-height: 100vh;
     padding: 100px;
+    width: 100%;
 }
 
 .main
 {
     box-shadow: -2px 0px 158px 1px rgba(0,0,0,0.7);
--webkit-box-shadow: -2px 0px 158px 1px rgba(0,0,0,0.7);
--moz-box-shadow: -2px 0px 158px 1px rgba(0,0,0,0.7);
+    -webkit-box-shadow: -2px 0px 158px 1px rgba(0,0,0,0.7);
+    -moz-box-shadow: -2px 0px 158px 1px rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: column;
 }
 
 .header
@@ -163,7 +167,7 @@
 
 .i3 .small-text
 {
-    width: 1000px;
+    width: 100%;
     /* border: 1px solid #fff; */
     align-self: center;
     justify-self: center;
@@ -180,7 +184,7 @@ hr
 {
     width: 70%;
     min-height: 50vh;
-    /* border: 1px solid #fff; */
+    border: 1px solid #fff;
     display: flex;
     flex-wrap: wrap;
     padding: 50px;
@@ -319,14 +323,86 @@ hr
     margin-bottom: 5px;
 }
 
-/* .span-bottom
+.right-2
 {
-
-} */
-
+    display: none;
+}
 
 .sm-txt /* edited */
 {
     font-weight: 100;
     line-height: 30px;
 }
+
+.fa-bars
+{
+    /* color: #fff; */
+    display: none;
+}
+
+@media(max-width: 1000px)
+{
+    .i1 .right
+    {
+        display: none;
+    }
+
+    #right-2
+    {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        z-index: 1;
+        background: #2f2f2f;
+        padding: 10px;
+        /* transition: 10s ease-in-out; */
+    }
+
+    .fa-bars, .fa-times 
+    {
+        color: #fff;
+        display: block;
+        padding:5px;
+    }
+
+    .i2-right
+    {
+        display: none;
+    }
+
+    .item-container
+{
+    width: 70%;
+    min-height: 50vh;
+    border: 1px solid #fff;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    /* padding-left: 170px; */ /* Edited */
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.i4 .about-down
+{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 70%;
+    /* border: 1px solid #fff; */
+    min-height: 5vh;
+    padding: 50px;
+    margin: 20px 0;
+    /* padding-left: 170px; */ /* Edited */
+}
+
+.hi-there > div
+{
+    width: 200px;
+    border: 1px solid #fff;
+    flex-direction: column;
+    text-align: center;
+}
+
+}
+
+

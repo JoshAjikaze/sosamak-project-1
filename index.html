@@ -9,6 +9,17 @@
     <title>ami.ke</title>
 </head>
 <body>
+    
+                    <div class="right-2" id="right-2">
+                        <i onclick="hideNav()" class="fa-solid fa-times"></i>
+                        <a href="#" class="nav-link">Home</a>
+                        <a href="#" class="nav-link">Services</a>
+                        <a href="#" class="nav-link">About</a>
+                        <a href="#" class="nav-link">Skills</a>
+                        <a href="#" class="nav-link">Portfolio</a>
+                        <a href="#" class="nav-link">Blog</a>
+                        <a href="#" class="nav-link">Contact</a>
+                    </div>
     <div class="container">
         <div class="header">
             <h1>ami.ke</h1>
@@ -18,6 +29,7 @@
                 <div class="left">
                     <a href="#">ami.ke</a>
                 </div>
+                
                 <div class="right">
                     <a href="#" class="nav-link">Home</a>
                     <a href="#" class="nav-link">Services</a>
@@ -27,6 +39,9 @@
                     <a href="#" class="nav-link">Blog</a>
                     <a href="#" class="nav-link">Contact</a>
                 </div>
+
+                <i onclick="showNav()" class="fa-solid fa-bars"></i>
+
             </div>
 
             <div class="box-element i2">
@@ -167,6 +182,26 @@
             
         </div>
     </div>
+
+    <script>
+        
+        function showNav(){
+            var button = document.getElementById('right-2');
+            if(button.style.display === 'none'){
+                button.style.display = 'block';
+                document.getElementById('right-2').style.transition='10s';
+            }
+            else{
+                button.style.display = 'none';
+                document.getElementById('right-2').style.transition='10s';
+            }
+        }
+
+        function hideNav(){
+            document.getElementById('right-2').style.display='none';
+            document.getElementById('right-2').style.transition='10s';
+        }
+    </script>
     
 
 </body>
